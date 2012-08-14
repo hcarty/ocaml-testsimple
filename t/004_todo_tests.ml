@@ -1,5 +1,7 @@
-#!/usr/local/bin/ocamlrun /usr/local/bin/ocaml
+#!/usr/bin/env ocaml
 
+#use "topfind";;
+#require "batteries";;
 #load "testSimple.cma";;
 
 open TestSimple;;

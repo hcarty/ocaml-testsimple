@@ -19,6 +19,8 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *)
+
+open Batteries_uni
  
 (* storage for current running tests and plan *)
 
@@ -73,8 +75,8 @@ let build_extended_diagnostic_message test (got : 'a) (expected : 'a) descriptio
     else 
         Some(TAPDocument.Diag([ "Failed test '" ^ description ^ "'";    
                                 "in " ^ (Array.get Sys.argv 0);
-                                (Format.sprintf "     got: %s" (ExtLib.dump got));
-                                (Format.sprintf "expected: %s" (ExtLib.dump expected));      
+                                (Format.sprintf "     got: %s" (dump got));
+                                (Format.sprintf "expected: %s" (dump expected));      
                               ]))
 
 let build_diagnostic_message test description =

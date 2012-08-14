@@ -4,15 +4,12 @@ SOURCES = tAPDocument.mli tAPDocument.ml \
 		  testSimple.mli testSimple.ml
 RESULT  = testSimple
 
-PACKS = extLib
+PACKS = batteries
 
 LIBINSTALL_FILES = tAPDocument.mli tAPDocument.cmi \
             	   testBuilder.mli testBuilder.cmi \
 		           testSimple.mli testSimple.cmi \
 		           testSimple.cma testSimple.cmxa testSimple.a
-
-INCDIRS = /usr/local/lib/ocaml/site-lib/extlib
-OCAMLBLDFLAGS = extLib.cma
 
 all: bcl
 
