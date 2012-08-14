@@ -2,7 +2,8 @@
 
 #use "topfind";;
 #require "batteries";;
-#load "testSimple.cma";;
+#directory "_build/src";;
+#load "testsimple.cma";;
 
 open TestSimple;;
 

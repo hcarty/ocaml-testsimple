@@ -1,0 +1,21 @@
+OASISFormat: 0.3
+Name:        TestSimple
+Version:     0.02
+Synopsis:    A simple unit testing framework
+Authors:     Stevan Little
+License:     LGPL-2.1 with OCaml linking exception
+Plugins:     META (0.3), StdFiles (0.3), DevFiles (0.3)
+XStdFilesAUTHORS: false
+xStdFilesREADME: false
+
+Library testsimple
+  Path:           src
+  BuildTools:     ocamlbuild
+  BuildDepends:   batteries
+  Modules:        TAPDocument, TestBuilder, TestSimple
+  CompiledObject: best
+
+Test tests
+  TestTools: ocaml, prove
+  Command:   prove t/*.ml
+

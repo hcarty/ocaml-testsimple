@@ -1,5 +1,11 @@
 Changes for TestSimple 
 
+0.02 - Thursday, August 14, 2012
+
+        - Move to oasis for building
+        - findlib name is now 'testsimple'
+        - Depend on Batteries rather than Extlib
+
 0.01 - Thursday, January 25, 2007
-	
-	- Initial public release
+
+        - Initial public release
