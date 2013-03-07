@@ -1,6 +1,6 @@
 # OASIS_START
-# DO NOT EDIT (digest: 481b6499f2ac9acbcdea36b8f6878472)
-version = "0.02"
+# DO NOT EDIT (digest: b33582688e796a6bc7e100f20f2ad503)
+version = "0.03"
 description = "A simple unit testing framework"
 requires = "batteries"
 archive(byte) = "testsimple.cma"
