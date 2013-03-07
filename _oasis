@@ -1,6 +1,6 @@
 OASISFormat: 0.3
 Name:        TestSimple
-Version:     0.02
+Version:     0.03
 Synopsis:    A simple unit testing framework
 Authors:     Stevan Little
 License:     LGPL-2.1 with OCaml linking exception
