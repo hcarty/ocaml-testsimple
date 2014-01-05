@@ -1,9 +1,11 @@
 OASISFormat: 0.3
 Name:        TestSimple
-Version:     0.03
+Version:     0.3.1
 Synopsis:    A simple unit testing framework
 Authors:     Stevan Little
+Maintainers: Hezekiah M. Carty <hez@0ok.org>
 License:     LGPL-2.1 with OCaml linking exception
+Homepage:    https://github.com/hcarty/ocaml-testsimple
 Plugins:     META (0.3), StdFiles (0.3), DevFiles (0.3)
 XStdFilesAUTHORS: false
 xStdFilesREADME: false
@@ -19,3 +21,7 @@ Test tests
   TestTools: ocaml, prove
   Command:   prove t/*.ml
 
+SourceRepository master
+  Type:     git
+  Location: https://github.com/hcarty/ocaml-testsimple.git
+  Browser:  https://github.com/hcarty/ocaml-testsimple
