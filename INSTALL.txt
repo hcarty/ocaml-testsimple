@@ -1,9 +1,9 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 8ad03cb538dca98690bdb3bd783e9be9) *)
+(* DO NOT EDIT (digest: 1e07555cf3803e824259d3218b675354) *)
 This is the INSTALL file for the TestSimple distribution.
 
 This package uses OASIS to generate its build system. See section OASIS for
-full information. 
+full information.
 
 Dependencies
 ============
@@ -25,7 +25,7 @@ Installing
 Uninstalling
 ============
 
-1. Go to the root of the package 
+1. Go to the root of the package
 2. Run 'ocaml setup.ml -uninstall'
 
 OASIS
