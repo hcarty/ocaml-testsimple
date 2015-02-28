@@ -1,5 +1,6 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 1e07555cf3803e824259d3218b675354) *)
+(* DO NOT EDIT (digest: e853354bb8097114313451907c9702e7) *)
+
 This is the INSTALL file for the TestSimple distribution.
 
 This package uses OASIS to generate its build system. See section OASIS for
@@ -9,6 +10,7 @@ Dependencies
 ============
 
 In order to compile this package, you will need:
+
 * ocaml for all, test tests
 * findlib
 * batteries

@@ -1,8 +1,9 @@
 # OASIS_START
-# DO NOT EDIT (digest: bd65538d201c2406f9b99c240653ebfc)
+# DO NOT EDIT (digest: 13aa518f6525ed4e11f418a0035eb964)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
+true: annot, bin_annot
 <**/.svn>: -traverse
 <**/.svn>: not_hygienic
 ".bzr": -traverse
@@ -15,5 +16,5 @@
 "_darcs": not_hygienic
 # Library testsimple
 "src/testsimple.cmxs": use_testsimple
-<src/*.ml{,i}>: pkg_batteries
+<src/*.ml{,i,y}>: pkg_batteries
 # OASIS_STOP
