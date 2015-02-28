@@ -101,6 +101,7 @@ val no_plan : unit -> unit
 (** {2 Testing functions} *)
 
 val ok : ?todo:string -> bool -> string -> unit
+val okf : ?todo:string -> bool -> ('a, unit, string, unit) format4 -> 'a
 (** 
     An [ok] tests is the most basic test, it is similar to [assert] in that 
     it expects a boolean value, or an expression which reduces to a boolean, 
@@ -110,7 +111,11 @@ val ok : ?todo:string -> bool -> string -> unit
     for later.
 *)
 
-val is : ?todo:string -> 'a -> 'a -> string -> unit
+val is : ?todo:string -> ?eq:('a -> 'a -> bool) -> 'a -> 'a -> string -> unit
+val isf :
+  ?todo:string ->
+  ?eq:('a -> 'a -> bool) ->
+  'a -> 'a -> ('b, unit, string, unit) format4 -> 'b
 (** 
     This is similar to the [ok] test except that it takes two values and performs
     it's own comparison on them using [=]. The benefit of using this over doing 

@@ -19,7 +19,7 @@
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *)
- 
+
 let plan count = 
     TestBuilder.create_test_plan ~count:count ()
     
@@ -36,8 +36,11 @@ let ok ?todo test description =
         test 
         description
 
-let is ?todo (got : 'a) (expected : 'a) description =
-    let test = got = expected in
+let okf ?todo test description =
+  Printf.ksprintf (ok ?todo test) description
+
+let is ?todo ?(eq = ( = )) (got : 'a) (expected : 'a) description =
+    let test = eq got expected in
     TestBuilder.build_test_case 
         ?todo:todo  
         ?diag:(TestBuilder.build_extended_diagnostic_message 
@@ -47,3 +50,6 @@ let is ?todo (got : 'a) (expected : 'a) description =
                 description)
         test 
         description
+
+let isf ?todo ?eq got expected description =
+  Printf.ksprintf (is ?todo ?eq got expected) description
